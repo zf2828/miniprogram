@@ -13,6 +13,7 @@
 </view>
 
 <text>{{useData}}</text>
+<text>ddd</text>
 
 
 <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
