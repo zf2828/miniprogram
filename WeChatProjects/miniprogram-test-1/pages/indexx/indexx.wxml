@@ -1,0 +1,8 @@
+<view class="index-container">
+  <image class="logo" src="../indexx/285px.png">
+  </image>
+  <text class="username">hello</text>
+  <view class="btn" bindtap='goNews'>
+    <text>button</text>
+  </view>
+</view>

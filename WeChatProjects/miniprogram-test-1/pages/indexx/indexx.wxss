@@ -1,0 +1,28 @@
+.index-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-container .logo {
+  width: 600rpx;
+  height: 400rpx;
+  margin-top: 160rpx;
+}
+
+.index-container .username {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 100rpx;
+}
+
+.index-container .btn {
+  border: 1px solid #109d59;
+  margin-top: 100rpx;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.index-container .btn text {
+  color: red;
+}

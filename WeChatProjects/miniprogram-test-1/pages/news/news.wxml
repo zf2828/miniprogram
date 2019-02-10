@@ -1,0 +1,35 @@
+<view class="news-container">
+  <swiper indicator-dots='{{indicatordots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
+    <swiper-item>
+      <image src="../news/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../news/banner2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../news/banner3.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<text>{{useData}}</text>
+
+
+<block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
+<view class="articlelist">
+  <view class="author-time">
+    <image class="authoricon" src="{{item.authorIcon}}"></image>
+    <text class="author">{{item.authorName}}</text>
+    <text class="time">{{item.authorDate}}</text>
+  </view>
+  <text class="title">{{item.title}}</text>
+  <image class="articleimg" src="{{item.articleImg}}"></image>
+  <text class="article">{{item.articleText}}</text>
+  <view class="article-like">
+    <image class="article-like-icon" src="../news/a.png"></image>
+    <text class="article-like-text">{{item.pl}}</text>
+    <image class="article-like-icon" src="../news/b.png"></image>
+    <text class="article-like-text">{{item.pl}}</text>
+  </view>
+</view>
+</block>
