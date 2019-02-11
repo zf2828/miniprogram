@@ -3,7 +3,8 @@
     "pages/indexx/indexx",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/news/news-detail/news-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

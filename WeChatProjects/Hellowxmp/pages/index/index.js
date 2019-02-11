@@ -1,11 +1,13 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var hello1 = require('../data/hellodata.js')
 
 Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    hello:"",
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
@@ -16,6 +18,9 @@ Page({
     })
   },
   onLoad: function () {
+    this.setData({
+      hello: hello1.helloData,
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

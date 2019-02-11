@@ -1,4 +1,6 @@
 <!--index.wxml-->
+<import src="index-template/index-template.wxml" />
+
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -8,6 +10,9 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <block wx:for="{{hello}}" wx:for-item="item">
+      <!-- <text class="user-motto">{{item.demo}}</text> -->
+      <template is="indexTemplate" data="{{...item}}" />
+    </block>
   </view>
 </view>
