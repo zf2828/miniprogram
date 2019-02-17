@@ -1,2 +1,20 @@
-<!--pages/news/news-detail/news-detail.wxml-->
-<text>pages/news/news-detail/news-detail.wxml</text>
+<view class="news-detail-container">
+  <view>{{authorName}}</view>
+
+  <image class="head-img" src="../../news/banner1.jpg"></image>
+  <view class="author-time">
+    <image class="author-avatar" src="../../news/head1.jpg"></image>
+    <text class="author-name">aaa</text>
+    <text class="const-text">发表于</text>
+    <text class="time">2017/3/22</text>
+  </view>
+  <text class="title">标题</text>
+  <view class="tool">
+    <view class="circle-img">
+      <image src="../../images/sc.png"></image>
+      <image class="share-img" src="../../images/fx.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+  <text class="detail">详情</text>
+</view>

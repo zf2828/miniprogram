@@ -1,4 +1,4 @@
-<import src="news-template/news-template.wxml"/>
+<import src="news-template/news-template.wxml" />
 
 <view class="news-container">
   <swiper indicator-dots='{{indicatordots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
@@ -19,5 +19,7 @@
 
 
 <block wx:for="{{useData}}" wx:for-item="item" wx:key="key">
-  <template is="news-template" data="{{...item}}"/>
+  <view bindtap="goNewsDetail" data-newsid="{{item.newsid}}">
+    <template is="news-template" data="{{...item}}" />
+  </view>
 </block>

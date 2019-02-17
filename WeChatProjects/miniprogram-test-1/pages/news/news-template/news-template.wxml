@@ -9,10 +9,10 @@
     <image class="articleimg" src="{{articleImg}}"></image>
     <text class="article">{{articleText}}</text>
     <view class="article-like">
-      <image class="article-like-icon" src="../a.png"></image>
+      <image class="article-like-icon" src="../news/a.png"></image>
       <text class="article-like-text">{{pl}}</text>
-      <image class="article-like-icon" src="../b.png"></image>
-      <text class="article-like-text">{{pl}}</text>
+      <image class="article-like-icon" src="../news/b.png"></image>
+      <text class="article-like-text">{{dz}}</text>
     </view>
   </view>
 </template>

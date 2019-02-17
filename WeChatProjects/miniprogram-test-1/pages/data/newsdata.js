@@ -17,8 +17,8 @@ var initData = [{
     "title": "biaoti",
     "articleImg": "../news/head1.jpg",
     "articleText": "zhengwen",
-    "pl": 12,
-    "dz": 22,
+    "pl": 32,
+    "dz": 42,
   }
 ]
 
